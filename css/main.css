@@ -1,0 +1,84 @@
+@charset 'utf-8';
+
+#contents {width:1400px;margin: 0 auto;font-family: 'Noto Sans KR', sans-serif;}
+
+#wrap {overflow: hidden;margin: auto;position: relative}
+#wrap:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 260px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #000;
+    
+} /*left: 60px;*/
+
+#wrap:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 260px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #000;
+    
+}
+
+#header {
+    border-bottom: 1px solid #000
+}
+
+#header .inner {
+    width: 1400px;
+    margin: 0 auto;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative
+}
+
+#header .inner .gnb {
+    display: flex;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 33%
+}
+
+#header .inner .gnb li {
+    margin-right: 100px;
+}
+
+#header .inner .gnb li a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+#header .inner .gnb li a:hover {
+    text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px white;
+    
+    display: block;
+
+    /* Clip Background Image */
+
+    background: url(../img/portfolio/text_hover.jpg) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+#intro {padding: 50px}
+#intro h1 {font-size: 80px;font-weight: bold;line-height: 100px}
