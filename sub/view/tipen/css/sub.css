@@ -1,0 +1,155 @@
+@charset 'utf-8';
+/*초기화요소*/
+
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none}
+table {border-collapse: collapse}
+a {text-decoration: none;color: #000}
+fieldset {border: 0}
+legend, caption {display: none}
+input {vertical-align: middle;border: 0}
+
+.clearfix:after {content: "";display: block;clear: both}
+
+
+body {font-family:'nanumSquare';font-size: 16px;line-height: 26px;color: #000;}
+#wrap {overflow: hidden;min-width: 1200px;}
+
+#header {width: 1200px;height: 160px; margin: 0 auto;position: relative}
+#header h1 {position: absolute;top: 59px}
+#header .util {position: absolute;top: 14px;right: 0}
+#header .util li {float: left}
+#header .util li a {color: #707070;margin-left: 36px}
+
+#header form { display: inline-block;border:  solid 0.5px #707070;
+}
+#header input {background: #fff;height: 36px;color: #707070;width: 229px;box-sizing: border-box;}
+#header input[type="text"] {width: 180px}
+#header input[type="submit"] {font-size: 0;background:url(../images/common/magnifying-glass.png) no-repeat center center;width: 50px;cursor: pointer}
+#header .gnb {font-family: 'NanumGothic';position: absolute;z-index:999;margin-left: 250px; top: 92px;}
+#header .gnb > li {float: left;position: relative}
+#header .gnb > li > a {display: block;font-size:28px;text-align: center;padding: 0 38px}
+
+#header .gnb > li:hover > a { color: #b88700; }
+/*#top #header .gnb > li:hover > .dp2 { display: block; }*/
+ #header .gnb .dp2 { position:absolute; left:0; top:50px; width:159px;box-sizing: border-box; background:#fdeec5;padding: 5px 0 }
+#header .gnb .dp2 li a {font-size: 18px; display: block; text-align: center; padding: 11px 10px; color: #000; }
+ #header .gnb .dp2 li a:hover { color:#B88700;}
+
+
+/*sub*/
+#shop {width: 1200px;margin: 75px auto}
+.homebutton {margin-bottom: 30px}
+.home {position: relative;top: 0;left: 0}
+.home_right {position: absolute;top: 235px;left: 400px}
+.home_find a {position: absolute;top: 233px;left: 430px;color: #9a9a9a;font-size: 17px;font-weight: bold;}
+
+#shop .shop_right {float: right}
+
+/*review*/
+#review {width: 1200px;margin: 75px auto}
+#review h1 {text-align: center;font-size: 60px;color: #e4c266;margin-bottom: 52px;}
+#review h1 span {color: #c9a33c}
+#review h2 {text-align: center;font-weight: normal;font-size: 30px;line-height: 1.15;margin-bottom: 44px}
+
+#review .rank {width: 1083px;margin-left: auto;margin-right: auto}
+#review .rank li {border: 1px solid #dcdcdc;width: 295px;height: 426px;position: relative;float: left;margin-right: 54px;margin-bottom: 162px;}
+#review .rank li:nth-child(3) {margin-right: 0;transform: translateY(50px)}
+#review .rank li:nth-child(1) {transform: translateY(50px)}
+#review .rank li:nth-child(2) {width: 379px;height: 535px}
+#review .rank li p {color:#585858;margin: 0 8px}
+
+#review .rank li dl {border: 1px solid #dcdcdc;display: block;height: 44px;position: absolute;bottom: 0; width: 295px;box-sizing: border-box;padding:7px; }
+#review .rank li:nth-child(2) dl {width: 379px}
+
+#review .rank li dl img {float: left;margin-right: 10px}
+#review .rank li dt {font-size: 12px;color: #585858;float:left;transform: translateX(50px)}
+#review .rank li:nth-child(2) dt {transform:translateX(150px)}
+#review .rank li dd {float: left;font-size: 12px;font-family: 'nanumSquare';margin-right: 5px;transform: translateX(52px)}
+#review .rank li:nth-child(2) dd {transform: translateX(152px)}
+#review .rank li dd:nth-child(2) {transform: translateX(-0px)}
+
+#review .notice {display: block;height: 115px;box-sizing: border-box;padding: 22px 0; background: #fdeec5;text-align: center;font-size: 16px}
+
+#review .method {margin:110px auto}
+#review .method li {float: left;display: block;width: 360px;height: 325px;text-align: center; border: 1px solid #707070;margin-right: 57px;box-sizing: border-box;padding:189px 0 }
+#review .method li p {font-size: 28px;margin-bottom: 20px;box-sizing: border-box}
+#review .method li:nth-child(1) {background: url(../images/review/img_review_papericon.jpg) no-repeat top 60px center;}
+#review .method li:nth-child(1) p {margin-bottom: 50px}
+#review .method li:nth-child(2) {background: url(../images/review/img_review_cameraicon.jpg) no-repeat top 60px center;}
+#review .method li:nth-child(2) p {margin-bottom: 50px}
+#review .method li:nth-child(3) {margin-right: 0;background: url(../images/review/img_review_instaicon.jpg) no-repeat top 60px center;}
+
+#review .photo {width: 1200px;margin:100px auto}
+#review .photo .all {text-align: center;font-size: 20px;padding-bottom: 10px; border-bottom: 1px solid #a8a8a8}
+
+#review .photo select {float: right;font-size:15px;width: 140px;height: 35px;margin:20px 0 54px;font-family: 'nanumSquare';color: #585858;box-sizing: border-box;padding-left: 10px}
+
+#review .photo ul li {border: 1px solid #dcdcdc;width: 273px;height: 407px;position: relative;float: left;margin-right: 33px;margin-bottom: 33px}
+#review .photo ul li:nth-child(4) {margin-right: 0}
+#review .photo ul li:nth-child(8) {margin-right: 0}
+#review .photo ul li p {color:#585858;margin: 0 8px}
+
+#review .photo ul li dl {border: 1px solid #dcdcdc;display: block;height: 44px;position: absolute;bottom: 0; width: 273px;box-sizing: border-box;padding:7px; }
+
+#review .photo ul li dl img {float: left;margin-right: 10px}
+#review .photo ul li dt {font-size: 12px;color: #585858;float:left;transform: translateX(50px)}
+#review .photo ul li dd {float: left;font-size: 12px;font-family: 'nanumSquare';margin-right: 5px;transform: translateX(52px)}
+#review .photo ul li dd:nth-child(2) {transform: translateX(-0px)}
+
+#review .paging {margin-top: 30px}
+#review .paging ul {text-align: center}
+#review .paging ul li {display: inline-block;padding: 5px 15px;}
+#review .paging ul li a {color: #585858}
+#review .paging ul li:nth-child(1) {text-indent: -9999px;background: url('../images/review/ppast.png') no-repeat center center;border: 0}
+#review .paging ul li:nth-child(2) {text-indent: -9999px;background: url('../images/review/past.png') no-repeat center center;border: 0}
+#review .paging ul li:nth-child(8) {text-indent: -9999px;background: url('../images/review/next.png') no-repeat center center;border: 0}
+#review .paging ul li:nth-child(9) {text-indent: -9999px;background: url('../images/review/nnext.png') no-repeat center center;border: 0}
+#review .paging ul .on {font-weight: bold;}
+
+
+
+
+
+/*shop*/
+#shop .shop_right {margin-left:10px}
+
+#shop .text {transform: translate(35px,-35px)}
+#shop form { display: inline-block;border:  solid 0.5px #dcdcdc;transform: translateY(-15px)
+}
+#shop input {background: #fff;height: 69px;color: #707070;width:455px;box-sizing: border-box;font-size: 17px;color: #585858;font-family: NanumSquare;}
+#shop input[type="text"] {width: 404px;box-sizing: border-box;padding: 26px 22px 25px}
+#shop input[type="submit"] {font-size: 0;background:url(../images/shop/search.png) no-repeat center center;width:50px;cursor: pointer;box-sizing: border-box}
+
+#shop table {border: 1px solid #dcdcdc;display: block;width: 455px;height: 388px;overflow: scroll}
+#shop table tr {display: block; width: 455px; border-bottom: 1px solid #dcdcdc;box-sizing: border-box; padding: 12px 22px}
+#shop table tr td {color: #585858}
+
+
+/*product*/
+#product {width: 1200px;margin: 92px auto}
+#product { background:url(../images/product/fountain.png) no-repeat center top fixed; height:358px;width: 1920px; background-size: cover;padding: 90px 0; box-sizing: border-box; margin-bottom: 133px}
+#product h2 {width: 1200px;margin: 0 auto; font-size:60px; letter-spacing:-1px; font-family:" nanumSquare"; padding-bottom:23px;color: #a7a7a7 }
+#product p {color: #cdbe8f;text-align: left;font-size: 18px}
+
+#product .best_product h1 {text-align: center;font-family:'NanumSquare';font-size: 50px;margin: 39px}
+#product .best_product {display: block;width:900px;margin-left: auto;margin-right: auto;margin-top: 133px }
+#product .best_product li {float: left;margin-right: 63px;position: relative}
+#product .best_product li:nth-child(4) {margin-right: 0}
+#product .best_product li .name {text-align: center;font-family: NanumSquare;font-size: 22px;margin-top: 40px;color: #000}
+#product .best_product li .heart {position: absolute;top:305px;right: 0}
+#product .best_product li .price {font-family: NanumSquare;font-weight: bold;font-size: 24px;
+text-align: center;margin-top: 30px;color: #000}
+
+
+#footer {height: 369px;margin: 0px auto; background: #a7a7a7;box-sizing: border-box;padding: 50px 0}
+#footer .footer_inner {width: 1200px;margin: 0 auto;position: relative}
+#footer .footer_inner .footer_link li {float: left;padding:0 35px;border-right: 2px solid #fff}
+#footer .footer_inner .footer_link li:nth-child(1) {padding-left: 0}
+#footer .footer_inner .footer_link li:nth-child(4) {border: none}
+#footer .footer_inner .footer_link li a {color: #fff;font-size: 20px}
+
+#footer .footer_inner address {color: #d6d6d6;font-style: normal;font-size: 20px;line-height: 2; margin-top: 41px}
+
+#footer .footer_inner .sns {position: absolute;top: 0;right: 0}
+#footer .footer_inner .sns li {float: left;margin-left: 20px}

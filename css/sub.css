@@ -3,6 +3,16 @@
 /*kingdom*/
 #kingdom .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #fff;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
 #kingdom .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #fff;transform: rotate(90deg);position: absolute;left: 0;top: 0}
+#kingdom .view {position: absolute;top: 220px;right: 280px;color: #fff;font-family: 'Noto Sans KR', sans-serif;background: #91222c;font-size: 16px;padding: 8px 40px;letter-spacing: 4px;transition: background 0.5s}
+#kingdom .view:hover {background: #6f121b}
+
+
+/*tipen*/
+
+#tipen .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #e4c266;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
+#tipen .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #e4c266;transform: rotate(90deg);position: absolute;left: 0;top: 0}
+#tipen .view {position: absolute;top: 480px;left: 50%;color: #000;font-family: 'Noto Sans KR', sans-serif;background: #fff2d2;font-size: 16px;padding: 10px 40px;transition: background 0.5s;transform: translateX(-50%)}
+#tipen .view:hover {background: #d1b878}
 
 
 /*singsung*/
@@ -10,9 +20,3 @@
 #singsung .inner {text-align: center}
 #singsung .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #000;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
 #singsung .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #000;transform: rotate(90deg);position: absolute;left: 0;top: 0}
-
-
-/*tipen*/
-
-#tipen .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #e4c266;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
-#tipen .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #e4c266;transform: rotate(90deg);position: absolute;left: 0;top: 0}
