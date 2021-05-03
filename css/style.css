@@ -1,6 +1,7 @@
 
 svg {
   flex-shrink: 0;
-  width: 600px;
+  width: 700px;
   max-width: 90vw;
+    position: absolute;top: 50px;right: 100px
 }

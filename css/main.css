@@ -85,9 +85,9 @@
     }
 }
 
-#intro {width: 1400px;margin: 0 auto;}
+#intro {width: 1400px;margin: 0 auto;height: 860px;position: relative}
 #intro .inner {padding: 50px;box-sizing: border-box;}
-#intro h1 {font-size: 80px;font-weight: bold;line-height: 100px}
+#intro h1 {font-size: 80px;font-weight: bold;line-height: 100px;position: absolute;top: 140px;}
 
 
 #work {width: 1400px;margin: 0 auto}
