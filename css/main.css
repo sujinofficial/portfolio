@@ -57,10 +57,33 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    
 }
 
 #header .inner .gnb li a:hover {
+   background-image: url(../img/portfolio/text_hover.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    color: rgba(255,255,255,1);
+    -moz-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    animation: animate 25s linear infinite;
+    text-shadow: 1px #000 01px #000
+    
+}
+
+@keyframes animate {
+    0% {
+        background-position: left 0px top:80px;
+    }
+    
+    40% {
+        background-position: left 800px top:80px;
+    }
+    100% { 
+        background-position: left 1800px bottom 0px;
+    }
 }
 
 #intro {width: 1400px;margin: 0 auto;}
