@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+/*kingdom*/
+#kingdom .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #fff;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
+#kingdom .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #fff;transform: rotate(90deg);position: absolute;left: 0;top: 0}
+
+
+/*singsung*/
+
+#singsung .inner {text-align: center}
+#singsung .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #000;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
+#singsung .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #000;transform: rotate(90deg);position: absolute;left: 0;top: 0}
+
+
+/*tipen*/
+
+#tipen .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #e4c266;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
+#tipen .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #e4c266;transform: rotate(90deg);position: absolute;left: 0;top: 0}
