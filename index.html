@@ -5,11 +5,29 @@
     <title>portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/fullpage.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
+   <script src="js/fullpage.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function() {
+            new fullpage('#fullpage', {
+                navigation: true,
+                responsiveWidth: 1024,
+                anchors: ['menu1', 'menu2', 'menu3'],
+                parallax: true,
+                autoScrolling: true,
+                scrollOverflow: true,
+                sectionsColor: ['#fff', '#fff', '#fff'],
+                onLeave: function(origin, destination, direction) {
+                    console.log("Leaving section" + origin.index);
+                },
+            });
+        });
+    </script>
     
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -30,9 +48,16 @@
             </div>
         </header><!--//wrap-->
         
-        <div id="contents">
+        <footer id="footer">
+           <div class="inner">
+           <img src="img/portfolio/profile.png" alt="프로필">
+            <p>namsujin@kakao.com</p>
+            </div>
+        </footer>
         
-        <section id="intro" class="section"><!--intro-->
+        <div id="fullpage">
+        
+        <section id="intro" class="section" data-anchor="menu1"><!--intro-->
           <div class="inner">
           <div class="wrapper">
               <h2>저는 <br><span></span><br>디자이너<br>수진입니다</h2>
@@ -41,7 +66,7 @@
            </div>
         </section><!--//intro-->
         
-        <section id="work" class="section">
+        <section id="work" class="section" data-anchor="menu2"><!--work-->
             <div class="inner">
                 <ul class="works">
                     <li><a href="sub/kingdom.html"><div class="block"><img src="img/portfolio/work_01.jpg" alt="킹덤 반응형 웹디자인"></div><h1>넷플릭스 킹덤<br>반응형 웹디자인</h1><p>#다크한 #스릴러 #웅장한</p></a></li>
@@ -51,7 +76,11 @@
                 </ul>
                 
             </div>
-        </section>
+        </section><!--//work-->
+        
+        <section id="epilogue" class="section" data-anchor="menu3"><!--epilogue-->
+            
+        </section><!--//epilogue-->
         </div>
     </div><!--//wrap-->
 </body>
