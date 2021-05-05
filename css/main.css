@@ -44,6 +44,20 @@
     background: #fff
 }
 
+#header .inner h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-24px);
+    left: 16.145% /*left: 310px*/
+}
+
+
+#header .inner h1 img:hover {
+    box-shadow: 0 0 10px #9ac6a7,0 0 30px #9ac6a7,0 0 50px #9ac6a7;
+    border-radius: 100px;
+    transition: box-shadow 1s
+}
+
 #header .inner .gnb {
     display: flex;
     float: right;
@@ -120,7 +134,8 @@
 
 #intro {position: relative;border-bottom: 1px solid #000;box-sizing: border-box} /*padding:160px 310px 320px*/
 #intro .inner {padding: 60px;box-sizing: border-box;width: 1400px;margin: 0 auto}
-
+#intro .inner img:nth-child(2) {position: absolute;top: 300px;right: 300px;width: 600px;z-index: 9}
+#intro .inner img:nth-child(3) {position: absolute;top: 200px;right: 300px;width: 600px;}
 
 .wrapper h2 {
     font-size: 80px;
