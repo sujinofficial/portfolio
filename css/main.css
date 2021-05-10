@@ -100,12 +100,11 @@ cursor: pointer;
 
 #header {
    width: 100%;z-index: 99;border-bottom: 1px solid #000;position: fixed;background: #fff;
-    padding: 0px 16.145%;box-sizing: border-box;
+    padding: 1.354% 16.145% /*padding: 26px 310px*/;box-sizing: border-box;
 
 }
 
 #header .inner {
-    height: 100px;
     box-sizing: border-box;
     background: #fff;
     display: flex;
@@ -166,7 +165,8 @@ cursor: pointer;
 }
 
 @media all and (max-width:1023px) {
-    #header .gnb li {display: none}
+    #header .gnb li {display: none};
+    
 }
 
 #footer {
