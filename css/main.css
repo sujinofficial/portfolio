@@ -2,82 +2,291 @@
 
 
 
-#wrap {overflow: hidden}
+#wrap {overflow: hidden;margin: auto;position: relative}
 #wrap:before {
     display: block;
     content: '';
     position: absolute;
-    left: 260px;
+    left: 10.937%;
     top: 0;
     width: 1px;
     height: 100%;
     background: #000;
+    z-index: 999
     
-} /*left: 60px;*/
+} /*left: 210px;*/
 
 #wrap:after {
     display: block;
     content: '';
     position: absolute;
-    right: 260px;
+    right: 10.937%;
     top: 0;
     width: 1px;
     height: 100%;
     background: #000;
+    z-index: 999
     
 }
 
-#contents {font-family: 'Noto Sans KR', sans-serif;}
+#fullpage {font-family: 'Noto Sans KR', sans-serif;}
+
+
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: 600px;
+width: 600px;
+min-height: 150px;
+margin: 300px auto;
+background: #ffffff;
+position: relative;
+z-index: 103;
+padding: 25px 40px;
+border-radius: 20px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 h1 {
+    font-weight: bold;
+    font-size: 32px
+}
+.cnt223 p{
+clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 15px;
+}
+.cnt223 span {
+    font-weight: bold
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+
 
 #header {
-    border-bottom: 1px solid #000;
+   width: 100%;z-index: 99;border-bottom: 1px solid #000;position: fixed;background: #fff;
+    padding: 1.354% 16.145% /*padding: 26px 310px*/;box-sizing: border-box;
+
 }
 
 #header .inner {
-    width: 1400px;
-    margin: 0 auto;
-    height: 100px;
     box-sizing: border-box;
-    position: relative
+    background: #fff;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+#header .inner h1 {
+    align-self: center
+    
+}
+
+
+#header .inner h1 img:hover {
+    box-shadow: 0 0 10px #9ac6a7,0 0 30px #9ac6a7,0 0 50px #9ac6a7;
+    border-radius: 100px;
+    transition: box-shadow 1s
 }
 
 #header .inner .gnb {
     display: flex;
-    float: right;
+    align-self: center;
     position: absolute;
-    right: 0;
-    top: 33%
+    right: 18.75%
+    
+    
+    
 }
 
 #header .inner .gnb li {
     margin-right: 100px;
+}
+#header .inner .gnb li:nth-child(3) {
+    margin-right: 0
 }
 
 #header .inner .gnb li a {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    
 }
 
 #header .inner .gnb li a:hover {
+   background-image: url(../img/portfolio/text_hover3.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    color: rgba(255,255,255,1);
+    -moz-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    animation: slide 25s linear infinite;
+    -webkit-text-stroke: 1px #000
+    
 }
 
-#intro {width: 1400px;margin: 0 auto;}
-#intro .inner {padding: 50px;box-sizing: border-box;}
-#intro h1 {font-size: 80px;font-weight: bold;line-height: 100px}
+@media all and (min-width:1024px) and (max-width:1400px) {
+}
+
+@media all and (max-width:1023px) {
+    #header .gnb li {display: none};
+    
+}
+
+#footer {
+   position: absolute;bottom: 0;width: 100%;box-sizing: border-box;z-index: 99;border-top: 1px solid #000;position: fixed;background: #fff;
+    padding: 0px 16.145%;
 
 
+}
+
+#footer .inner {
+    height: 100px;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex
+}
+
+#footer .inner img {
+    width: 48px;height: 48px;
+    margin: 26px 0;
+}
+
+#footer .inner p {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: .2px;
+    line-height: 100px;
+    margin-left: 20px
+}
+
+#footer .inner p:nth-child(3) {
+    line-height: 100px;
+    color: #777;
+    position: absolute;
+    right: 18.75%
+    
+}
+
+@keyframes slide {
+    0% {
+        background-position: left 0px top:80px;
+    }
+    
+    40% {
+        background-position: left 800px top:80px;
+    }
+    100% { 
+        background-position: left 1800px bottom 0px;
+    }
+}
+
+
+
+<<<<<<< HEAD
 #work {width: 1400px;margin: 0 auto}
 #work ul{display: flex;text-align: center;margin: 0 auto;width: 1300px}
 #work ul li {position: relative;margin-right: 20px;width: 310px;}
+=======
+#intro {position: relative;border-bottom: 1px solid #000;box-sizing: border-box;
+padding: 0 16.1458%} /*padding:0px 310px*/
+#intro .inner {box-sizing: border-box;}
+#intro .inner img:nth-child(2) {position: absolute;top: 280px;right: 15.625%;width: 600px;z-index: 9} /*top: 280px;right: 300px;width: 600px;*/
+#intro .inner img:nth-child(3) {position: absolute;top: 180px;right: 15.625%;width: 600px;}
+
+
+
+.wrapper h2 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 100px;
+    
+}
+
+.wrapper span:before {
+    content: "";
+    animation: animate infinite 12s;
+    
+}
+
+@keyframes animate {
+    0%{
+        content: "섬세한";  
+    }
+    20%{
+        content: "예리한";  
+    }
+    40%{
+        content: "성실한";  
+    }
+    60%{
+        content: "트렌디한";  
+    }
+    80%{
+        content: "성장하는";  
+    }
+    100%{
+        content: "소통하는";  
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1400px) {
+}
+
+@media all and (max-width:1023px) {
+    .wrapper h2 {font-size: 60px;line-height: 80px}
+}
+
+#work {border-bottom: 1px solid #000} /*padding: 150px 310px 200px*/
+#work ul{display: flex;text-align: center;margin: 0 auto;width: 1300px;transform: translateY(0px)}
+#work ul li {position: relative;margin-right: 20px;width: 310px}
+>>>>>>> 7358447dc9efe5336533d7b1b7cc75f00585e168
 #work ul li:nth-child(odd) {margin-top: 40px;}
-#work h1 {font-size: 40px;font-weight: bold;line-height: 54px}
+#work ul li:nth-child(1) {}
+#work h1 {font-size: 32px;font-weight: bold;line-height: 40px;margin-top: 16px}
 
 #work ul li .block {width: 310px;height: 400px;overflow: hidden;}
 #work ul li img {width:100%;height:100%;transition: transform .5s;transform:opacity 0.5s  }
 
 #work ul li img:hover {transform: scale(1.2);filter: opacity(70%)}
+#work p {margin-top: 12px;}
+
+
 
 #work p {float: left;margin-right: 16px;transform: translateX(55px);margin-top: 12px}
 

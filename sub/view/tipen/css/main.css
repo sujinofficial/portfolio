@@ -1,0 +1,144 @@
+@charset 'utf-8';
+/*초기화요소*/
+
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none}
+table {border-collapse: collapse}
+a {text-decoration: none;color: #000}
+fieldset {border: 0}
+legend, caption {display: none}
+input {vertical-align: middle;border: 0}
+
+.clearfix:after {content: "";display: block;clear: both}
+
+
+body {font-family:'nanumSquare';font-size: 16px;line-height: 26px;color: #000;}
+#wrap {overflow: hidden;min-width: 1200px;}
+
+#header {width: 1200px;height: 160px; margin: 0 auto;position: relative}
+#header h1 {position: absolute;top: 59px}
+#header .util {position: absolute;top: 14px;right: 0}
+#header .util li {float: left}
+#header .util li a {color: #707070;margin-left: 36px}
+
+#header form { display: inline-block;border:  solid 0.5px #707070;
+}
+#header input {background: #fff;height: 36px;color: #707070;width: 229px;box-sizing: border-box;}
+#header input[type="text"] {width: 180px}
+#header input[type="submit"] {font-size: 0;background:url(../images/common/magnifying-glass.png) no-repeat center center;width: 50px;cursor: pointer}
+#header .gnb {font-family: 'NanumGothic';position: absolute;z-index:999;margin-left: 250px; top: 92px;}
+#header .gnb > li {float: left;position: relative}
+#header .gnb > li > a {display: block;font-size:28px;text-align: center;padding: 0 38px}
+
+#header .gnb > li:hover > a { color: #b88700; }
+/*#top #header .gnb > li:hover > .dp2 { display: block; }*/
+ #header .gnb .dp2 { position:absolute; left:0; top:50px; width:159px;box-sizing: border-box; background:#fdeec5;padding: 5px 0 }
+#header .gnb .dp2 li a {font-size: 18px; display: block; text-align: center; padding: 11px 10px; color: #000; }
+ #header .gnb .dp2 li a:hover { color:#B88700;}
+
+
+
+
+#main_visual{width: 1920px; margin: 0 auto}
+
+#main_visual .bx-wrapper .bx-prev {
+    left: 45%;
+    background:url('../images/main/leftside.png') no-repeat center center;
+}
+
+
+#main_visual .bx-wrapper .bx-next {
+    right: 45%;
+    background: url('../images/main/rightside.png') no-repeat center center;z-index: 99
+}
+
+
+#main_visual .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 78%;
+    margin-top: -40px;
+    outline: 0;
+    width: 80px;
+    height: 80px;
+    text-indent: -9999px;
+    z-index: 9999;
+    border-radius: 50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#tipen {margin: 153px auto;height: 500px;background: #fff2d2;box-sizing: border-box;padding: 90px 0 95px}
+#tipen .tipen_inner {width: 1200px;margin: 0 auto;}
+#tipen .tipen_desc {float: right;transform: translateX(-180px)}
+#tipen .tipen_desc h2 {font-family: 'NanumSquare';font-weight: normal; font-size: 40px; margin-bottom: 81px;}
+#tipen .s_tit {font-family: 'NanumSquare';font-size: 20px;color: #534d45;line-height: 1.82;}
+#tipen .more a {font-family: 'NanumSquare';color: #c5a77f;}
+
+
+#best {margin: 135px auto;position: relative}
+#best .best_inner {width: 1200px;height: 577px;background: #f7f7f7;box-sizing: border-box;margin: 0 auto;padding: 58px 90px}
+#best h1 {text-align: center;font-family:'NanumSquare';font-size: 50px;margin: 39px}
+#best .all {position: absolute;top: 0;right: 350px;font-size: 27px}
+#best .best_inner ul li {float: left;margin-right: 84px;position: relative}
+#best .best_inner ul li:nth-child(3) {margin-right: 0}
+#best .best_inner ul li h3 {text-align: center;font-size: 35px;font-weight: normal;margin-bottom: 20px}
+#best .best_inner ul li .name {text-align: center;font-family: NanumSquare;font-size: 22px;margin-top: 40px;}
+#best .best_inner ul li .heart {position: absolute;top:376px;right: 0}
+#best .best_inner ul li .price {font-family: NanumSquare;font-weight: bold;font-size: 24px;
+text-align: center;margin-top: 30px}
+
+
+
+#brand { background:url(../images/main/brandimage.jpg) no-repeat center center fixed; height:424px; background-size: cover;padding: 90px 0; box-sizing: border-box; }
+#brand .brand_inner {width: 1200px;margin: 0 auto}
+#brand h2 { font-size:40px; letter-spacing:-1px; font-family:"Arial Black"; padding-bottom:23px;color: #cdbe8f }
+#brand p {color: #cdbe8f;text-align: left;font-size: 18px}
+#brand p:nth-child(2) {margin-bottom: 30px}
+
+
+
+
+#inform {margin: 145px auto;width: 1200px}
+#inform .notice {float: left;display: block;height: 364px;width:648px;box-sizing: border-box;position: relative }
+#inform .notice h3 {font-size: 33px;padding-bottom: 21px;border-bottom: 1px solid #707070;margin-bottom: 20px}
+#inform .all {position: absolute;right: 0;top: 0;font-size: 23px}
+#inform ul {background: #f7f7f7;height: 285px;box-sizing: border-box;padding: 60px 57px }
+#inform ul li {margin-bottom: 47px}
+#inform ul li a {font-size: 24px;}
+#inform ul li span {position: absolute;right: 41px}
+#inform .sale {float: right;display: block; height: 364px}
+
+
+
+#review {margin: 135px auto}
+#review h1 {text-align: center;font-size: 50px;margin-bottom: 39px}
+#review .review_bg {width: 1200px;height: 633px; margin: 0 auto;background: #272526;box-sizing: border-box; padding:102px 147px 0}
+#review .review_bg ul li{float: left;background: url('../images/main/star5.png') no-repeat center top 350px;height: 500px;}
+#review .review_bg ul li p {color: #fff;text-align: center;font-size: 20px;margin-top: 80px}
+
+
+
+
+
+
+
+#footer {height: 369px;margin: 0px auto; background: #a7a7a7;box-sizing: border-box;padding: 50px 0}
+#footer .footer_inner {width: 1200px;margin: 0 auto;position: relative}
+#footer .footer_inner .footer_link li {float: left;padding:0 35px;border-right: 2px solid #fff}
+#footer .footer_inner .footer_link li:nth-child(1) {padding-left: 0}
+#footer .footer_inner .footer_link li:nth-child(4) {border: none}
+#footer .footer_inner .footer_link li a {color: #fff;font-size: 20px}
+
+#footer .footer_inner address {color: #d6d6d6;font-style: normal;font-size: 20px;line-height: 2; margin-top: 41px}
+
+#footer .footer_inner .sns {position: absolute;top: 0;right: 0}
+#footer .footer_inner .sns li {float: left;margin-left: 20px}

@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/main.css" rel="stylesheet" type="text/css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/ani.css" rel="stylesheet" type="text/css">
+    <link href="css/fullpage.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
-    
+    <script>
+        $(document).ready(function() {
+            new fullpage('#fullpage', {
+                navigation: true,
+                responsiveWidth: 1024,
+                anchors: ['menu1', 'menu2', 'menu3'],
+                parallax: true,
+                autoScrolling: true,
+                scrollOverflow: true,
+                sectionsColor: ['#fff', '#fff', '#fff'],
+                onLeave: function(origin, destination, direction) {
+                    console.log("Leaving section" + origin.index);
+                },
+            });
+        });
+
+    </script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+
+    <script type='text/javascript'>
+        $(function() {
+            var overlay = $('<div id="overlay"></div>');
+            overlay.show();
+            overlay.appendTo(document.body);
+            $('.popup').show();
+            $('.close').click(function() {
+                $('.popup').hide();
+                overlay.appendTo(document.body).remove();
+                return false;
+            });
+
+
+
+
+            $('.x').click(function() {
+                $('.popup').hide();
+                overlay.appendTo(document.body).remove();
+                return false;
+            });
+        });
+
+    </script>
+
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
     <!--[if lt IE 9]>
@@ -18,28 +72,32 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-    <div id="wrap"><!--wrap-->
-        <header id="header"><!--header-->
-           <div class="inner">
-            <ul class="gnb">
-                <li><a href="#">Intro</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Epliogue</a></li>
-            </ul>
+    <div id="wrap">
+        <!--wrap-->
+        <div class='popup'><!--팝업 저작권표기-->
+            <div class='cnt223'>
+                <h1>Copyright Information </h1>
+                <br />
+                <p>
+                    본 사이트는 2021년 프론트엔드디자인 교육과정을 이수한 포트폴리오 저작물이므로<br>
+                    불법 복제는 불가합니다.<br> 사용된 이미지는 <span>freepik.com (vectorjuice)</span>,
+                    <span>unsplash.com(@pawel_czerwinski)</span>,<br><span>kor.pngtree.com/so </span>
+                    업체의 무료이미지를 편집하여 사용하였습니다.<br> 저작권은 해당 기업 및 이미지 저작자에게 있음을 알려드립니다.<br>
+문제의 소지가 있으면 namsujin@kakao.com로  연락 주시기 바랍니다.
+                    <br />
+                    <br />
+                    <br />
+                    <a href='' class='close'>Close</a>
+                </p>
             </div>
-        </header><!--//wrap-->
-        
-        <div id="contents">
-        
-        <section id="intro"><!--intro-->
-          <div class="inner">
-           <h1>저는<br>섬세한<br>디자이너<br>수진입니다</h1>
-           </div>
-        </section><!--//intro-->
-        
-        <section id="work">
+        </div><!--//팝업 저작권표기-->
+
+        <header id="header">
+            <!--header-->
             <div class="inner">
+<<<<<<< HEAD
                 <ul class="works">
                     <li><a href="#"><div class="block"><img src="img/portfolio/work_01.jpg" alt="킹덤 반응형 웹디자인"></div><h1>넷플릭스 킹덤<br>반응형 웹디자인</h1><p>#다크한</p>
                     <p>#스릴러</p><p>#웅장한</p></a></li>
@@ -49,10 +107,79 @@
                     <p>#즐거움</p><p>#에너지</p></a></li>
                     <li><a href="#"><div class="block"><img src="img/portfolio/work_04.jpg" alt="킹덤 반응형 웹디자인"></div><h1>환경 네이버<br>홈블로그</h1><p>#생동감</p>
                     <p>#파릇함</p><p>#따뜻함</p></a></li>
+=======
+                <h1><a href="index.html">
+                        <img src="img/portfolio/jade.png" alt="옥"></a></h1>
+                <ul class="gnb">
+                    <li><a href="#menu1">Intro</a></li>
+                    <li><a href="#menu2">UI/UX</a></li>
+                    <li><a href="#menu3">Graphic</a></li>
+>>>>>>> 7358447dc9efe5336533d7b1b7cc75f00585e168
                 </ul>
             </div>
-        </section>
+        </header>
+        <!--//wrap-->
+
+        <footer id="footer">
+            <div class="inner">
+                <img src="img/portfolio/profile.png" alt="프로필">
+                <p><a href="mailto:namsujin@kakao.com">namsujin@kakao.com</a></p>
+                <p>&copy; 2021 Nam Sujin All Rights Reserved. </p>
+            </div>
+        </footer>
+
+        <div id="fullpage">
+
+            <section id="intro" class="section" data-anchor="menu1">
+                <!--intro-->
+                <div class="inner">
+                    <div class="wrapper ani-start-fadeLeftReverse ani_stop;">
+                        <h2>저는 <br><span></span><br>디자이너<br>수진입니다</h2>
+                    </div>
+                    <img src="img/portfolio/intro_myself2.gif" alt="미모티콘" class="ani-start-fadeRight">
+                    <img src="img/portfolio/myself_bg.png" alt="배경이미지" class="ani-start-fadeRight">
+                </div>
+            </section>
+            <!--//intro-->
+
+            <section id="work" class="section" data-anchor="menu2">
+                <!--work-->
+                <div class="inner">
+                    <ul class="works">
+                        <li><a href="sub/kingdom.html">
+                                <div class="block"><img src="img/portfolio/work_01.jpg" alt="킹덤 반응형 웹디자인"></div>
+                                <h1>넷플릭스 킹덤<br>반응형 웹디자인</h1>
+                                <p>#다크한 #스릴러 #웅장한</p>
+                            </a></li>
+                        <li><a href="sub/tipen.html">
+                                <div class="block"><img src="img/portfolio/work_02.jpg" alt="티펜 웹디자인"></div>
+                                <h1>만년필브랜드<br>웹디자인</h1>
+                                <p>#전문적 #심플함 #고급진</p>
+                            </a></li>
+                        <li><a href="sub/singsung.html">
+                                <div class="block"><img src="img/portfolio/work_03.jpg" alt="싱숭생숭 앱디자인"></div>
+                                <h1>노래방어플<br>앱디자인</h1>
+                                <p>#발랄함 #즐거움 #에너지</p>
+                            </a></li>
+                        <li><a href="https://blog.naver.com/xiuperstar90">
+                                <div class="block"><img src="img/portfolio/work_04.jpg" alt="환경 홈블로그"></div>
+                                <h1>환경 네이버<br>홈블로그</h1>
+                                <p>#생동감 #파릇함 #따뜻한</p>
+                            </a></li>
+                    </ul>
+
+                </div>
+            </section>
+            <!--//work-->
+
+            <section id="epilogue" class="section" data-anchor="menu3">
+                <!--epilogue-->
+
+            </section>
+            <!--//epilogue-->
         </div>
-    </div><!--//wrap-->
+    </div>
+    <!--//wrap-->
 </body>
+
 </html>

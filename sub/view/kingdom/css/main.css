@@ -1,0 +1,300 @@
+@charset 'utf-8';
+
+body {font-family:'nanumSquare';font-size: 1rem;line-height: 1;color: #000;}
+#wrap {overflow: hidden;background: #000}
+h2 {font-size: 36px} 
+h2, p {color: #fff; }
+
+ @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@-webkit-keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} } 
+@-moz-keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} } 
+@keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} }
+
+.blinking{ -webkit-animation:blink 1.5s ease-in-out infinite alternate; -moz-animation:blink 3s ease-in-out infinite alternate; animation:blink 3s ease-in-out infinite alternate; }
+
+
+.clearfix {content: "";display: block;clear: both}
+
+
+
+/* header */
+#header {padding: 50px 5.208%;box-sizing: border-box;width: 100%; position: absolute; left: 0; top: 0;z-index: 9999;} /*padding: 50px 100px */
+#header .inner {display: flex;justify-content: space-between;}
+
+#header .gnb {display: flex;transition: media 0.5s;z-index: 999} 
+#header .gnb > li {margin: 10px 60px 0; position: relative; }
+#header .gnb > li > a {font-size: 1.25rem;color: #fff;display: block; text-align: center;} /*font-size: 20px*/
+
+#header .dp2 { position: absolute; left: 50%; transform: translateX(-50%); top: 36px; text-align: center;}
+#header .dp2 li {margin-bottom: 20px}
+#header .dp2 li a {font-size: 18px;display: block; color: #fff; }
+#header .dp2 li a:hover {color: #90222c;font-weight: bold }
+
+/* mobile gnb */
+#header .m_menu { display: none; font-size: 0; width: 36px; height: 2px; background: #fff; position: relative;transform: translateY(12px)}
+#header .m_menu:before { content: ""; position: absolute; width: 48px; height: 2px; background: #fff; right: 0; top: -12px; }
+#header .m_menu:after { content: ""; position: absolute; width: 24px; height: 2px; background: #fff; right: 0; top: 12px; }
+
+#header .m_wrap {position: fixed;left: 100%;top: 0;width: 100%;height: 1615px;background: #000;z-index: 999999;padding: 180px 116px;box-sizing: border-box}
+#header .m_wrap .m_gnb {}
+#header .m_wrap .m_gnb li {margin: 80px 0} /* font-size: 30px */
+#header .m_wrap .m_gnb li a {color: #fff;font-size: 60px}
+
+#header .m_wrap .depth2 li {margin-bottom: 56px}
+#header .m_wrap .depth2 li a {font-size: 32px}
+#header .m_wrap .depth2 li a:hover {color: #90222c}
+
+#header .close {display: inline-block;font-size: 0;width: 40px;height: 2px;background: #fff;transform: rotate(-45deg);position: absolute;top:60px;right: 30px}
+#header .close:after {content: ""; display: inline-block;width: 40px;height: 2px;background: #fff;transform: rotate(90deg);position: absolute;left: 0;top: 0}
+
+.dp2_bg {width: 100%;height: 960px;position: absolute;left: 0;top: 0;background: url('../images/img/dp2_bg.png') no-repeat center center;z-index: 99;}
+
+/* tablet */
+@media all and (min-width:768px) and (max-width:1024px) {
+    #header .gnb li {margin: 10px 22px 0;}
+    #header .dp2 li a {font-size: 14px }
+}
+
+/* mobile */
+@media all and (max-width:767px) {
+    #header h1 img {transform: scale(0.8)}
+    #header .gnb {display: none}
+    #header .m_menu {display: block}
+    
+}
+
+
+
+
+
+/* main_visual */
+#main_visual { height: 960px; text-align: center; color: #fff; position: relative; z-index: 9; } /* height: 960px; */
+#main_visual .mv { height: 960px; }
+#main_visual .mv li { height: 960px; }  /* height: 960px; */
+#main_visual .mv li.mv1 { background: url('../images/mainvisual/mainvisual_2_pc.png') no-repeat center top; background-size: cover; }
+#main_visual .mv li.mv2 { background: url('../images/mainvisual/mainvisual1.gif') no-repeat center top; background-size: cover; }
+#main_visual .mv li.mv3 { background: url('../images/mainvisual/mainvisual_3_pc.jpg') no-repeat center top; background-size: cover; }
+
+
+
+/* pager */
+#main_visual .bx-pager { position:absolute; bottom:60px; left:50%; transform: translateX(-50%); }
+#main_visual .bx-pager-item { float:left; }
+#main_visual .bx-pager a { background:#2e444f; text-indent:-9999px; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+#main_visual .bx-pager a.active { background:#91222c; }
+/* direction */
+#main_visual .bx-controls-direction a { position: absolute; top: 50%; margin-top: -20px; width: 40px; height: 40px; border-top: 2px solid #fff; border-left: 2px solid #fff; text-indent: -9999px; }
+#main_visual .bx-prev { left: 5%; transform: rotate(-45deg); }
+#main_visual .bx-next { right: 5%; transform: rotate(135deg); }
+
+
+/* tablet*/
+@media all and (min-width:768px) and (max-width:1024px) {
+    #main_visual .mv li.mv1 { background: url('../images/mainvisual/mainvisual_2_tablet.png') no-repeat center top;background-size: cover;}
+    #main_visual .mv li.mv2 { background: url('../images/mainvisual/mainvisual1.gif') no-repeat center top; background-size: cover; }
+#main_visual .mv li.mv3 { background: url('../images/mainvisual/mainvisual_3_tablet.jpg') no-repeat center top; background-size: cover; }
+        
+}
+
+/* mobile */
+@media all and (max-width:767px) {
+    #main_visual .mv li {width: 100%}
+    #main_visual .mv li.mv1 { background: url('../images/mainvisual/mainvisual_2_mobile.png') no-repeat center top;background-size: cover;}
+    #main_visual .mv li.mv2 { background: url('../images/mainvisual/mainvisual1.gif') no-repeat center top; background-size: cover; }
+#main_visual .mv li.mv3 { background: url('../images/mainvisual/mainvisual_3_mobile.jpg') no-repeat center top; background-size: cover; }
+    #main_visual .bx-controls-direction a { display: none; }
+}
+
+#season {position: relative;height: 960px;}
+#season .season_img li {height: 960px;}
+#season .season_img li.season1 {background: url('../images/img/season1.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+#season .season_img li.season2 {background: url('../images/img/season2.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+#season .season_img li.special {background: url('../images/img/season.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+
+/* season pager */
+#season .line {font-size: 0;background: #fff;z-index: 999;width: 100%;height: 1px;position: absolute;top: 50%}
+#season .bx-pager { position:absolute;top: 50%;left:0; z-index: 9999; width: 100%; text-align: center; transform: translateY(-50%);}
+#season .bx-pager-item { display: inline-block; }
+
+
+
+
+#season .bx-pager a { background:#fff; font-size: 0; display:block; width:18px; height:18px; margin:20px 145px; border-radius:50px; transition:all 0.5s;transform: translateY(5px); } /* margin:20px 180px*/
+#season .bx-pager a.active {width: 28px;height: 28px; transform: translateY(0px); transform: translate(1px,-1px)}
+#season .bx-pager a.active:before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 48px; height: 48px; border: 1px solid #fff; border-radius: 50%; }
+
+#season .bx-pager > div a:after {white-space: pre;margin-top: 10px}
+#season .bx-pager > div:nth-child(1) a:after { content: "Season 1"; font-size: 16px; color: #FFF; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); }
+#season .bx-pager > div:nth-child(2) a:after { content: "Season 2"; font-size: 16px; color: #FFF; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); }
+#season .bx-pager > div:nth-child(3) a:after { content: "Special Episode:\A ASHIN OF THE NORTH"; font-size: 16px; color: #FFF; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); }
+#season .bx-pager > div:nth-child(4) a:after { content: "Season 3"; font-size: 16px; color: #FFF; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); }
+
+#season .bx-pager > div a.active:after { font-size: 24px; }
+
+/* tablet*/
+@media all and (min-width:768px) and (max-width:1024px) {
+    #season ul li {width: 100%}
+    #season ul li.season1 {background: url('../images/img/season1_tablet.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+#season ul li.season2 {background: url('../images/img/season2_tablet.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+#season ul li.special {background: url('../images/img/season_tablet.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+
+
+#season {position: relative}
+#season .line {font-size: 0;background: #fff;z-index: 999;width: 1px;height: 100%;position: absolute;left: 75.6%;top: 0}
+#season .bx-pager { position:absolute; left: 75%; }
+#season .bx-pager-item { display: block; }
+    
+    #season .bx-pager a { background:#fff; font-size: 0; display:block; width:16px; height:16px; margin:145px 0; border-radius:50px; transition:all 0.5s;transform: translate(0,5px); }
+#season .bx-pager a.active {width: 24px;height: 24px; transform: translate(-3px,4.2px); }
+#season .bx-pager a.active:before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 40px; height: 40px; border: 1px solid #fff; border-radius: 50%; }
+
+#season .bx-pager > div a:after {margin-top: 10px;}
+#season .bx-pager > div:nth-child(1) a:after { content: "Season 1"; font-size: 16px; color: #FFF; position: static; padding-left: 50px; }
+#season .bx-pager > div:nth-child(2) a:after { content: "Season 2"; font-size: 16px; color: #FFF; position: static; padding-left: 50px; }
+#season .bx-pager > div:nth-child(3) a:after { content: "Special Episode"; font-size: 16px; color: #FFF; position: static; padding-left: 50px; }
+#season .bx-pager > div:nth-child(4) a:after { content: "Season 3"; font-size: 16px; color: #FFF; position: static; padding-left: 50px;}
+    
+#season .bx-pager > div a.active:after { font-size: 24px; }
+    
+    
+}
+
+/* mobile */
+@media all and (max-width:767px) {
+    #season .line {height: 100%}
+    #season ul li {width: 100%}
+    #season ul li.season1 {background: url('../images/img/season1_mobile.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+#season ul li.season2 {background: url('../images/img/season2_mobile.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+#season ul li.special {background: url('../images/img/season_mobile.jpg') no-repeat center center;background-size: cover;opacity: 0.7}
+    
+    
+#season {position: relative}
+#season .line {font-size: 0;background: #fff;z-index: 999;width: 1px;height: 98.4%;position: absolute;left: 61.2%;top: 0}
+#season .bx-pager { position:absolute; left: 60.3%; }
+#season .bx-pager-item { display: block; }
+    
+    #season .bx-pager a { background:#fff; font-size: 0; display:block; width:16px; height:16px; margin:145px 0; border-radius:50px; transition:all 0.5s;transform: translate(0,5px); }
+#season .bx-pager a.active {width: 24px;height: 24px; transform: translate(-3px,4.2px); }
+#season .bx-pager a.active:before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 40px; height: 40px; border: 1px solid #fff; border-radius: 50%; }
+
+#season .bx-pager > div a:after {margin-top: 10px;}
+#season .bx-pager > div:nth-child(1) a:after { content: "Season 1"; font-size: 16px; color: #FFF; position: static; padding-left: 50px; }
+#season .bx-pager > div:nth-child(2) a:after { content: "Season 2"; font-size: 16px; color: #FFF; position: static; padding-left: 50px; }
+#season .bx-pager > div:nth-child(3) a:after { content: "Special Episode"; font-size: 16px; color: #FFF; position: static; padding-left: 50px; }
+#season .bx-pager > div:nth-child(4) a:after { content: "Season 3"; font-size: 16px; color: #FFF; position: static; padding-left: 50px;}
+    
+    #season .bx-pager > div a.active:after { font-size: 20px; }
+}
+
+
+
+
+
+
+#trailer {padding: 4.479% 12.706%;box-sizing: border-box;height: 960px} 
+#trailer h2 {margin-bottom: 56px}
+#trailer .s_tit {margin-bottom: 86px}
+#trailer p {font-size: 18px}
+#trailer p.desc {margin-top: 20px;display: block;width: 300px;text-align: left}
+#trailer ul li {margin-right: 700px}
+#trailer ul li:nth-child(2) {margin-right: 0px}
+
+.tabmenu{ 
+   
+  margin: 0 auto; 
+  position:relative; 
+}
+.tabmenu .season {display: inline-block;position: absolute}
+.tabmenu ul li{
+  display:  inline-block;
+  width:40px; 
+  float:left;  
+  text-align:center;
+    border-radius: 50px;
+}
+
+.tabmenu ul li a{
+  display:block;
+  line-height:40px;
+  height:40px;
+  text-decoration:none; 
+  color: #fff;
+}
+.tabCon{
+  display:none; 
+  text-align:left; 
+  padding: 20px;
+  position:absolute; 
+}
+.btnCon:target  {
+  background : #91222c;
+}
+.btnCon:target .tabCon{
+  display: block;
+}
+
+
+/* Characters*/
+
+#characters {width: 100%;position: relative}
+#characters .bg { height: 960px; background: url('../images/img/background.jpg') no-repeat center top;}
+#characters .characters_inner {padding: 4.479% 12.706%;position: absolute;top: 0}
+#characters .characters_inner h2 {margin-bottom: 100px}
+#characters .images {}
+#characters .images li {float: left;margin-right: 20px;margin-bottom: 20px;position: relative}
+#characters .images li:nth-child(4) {margin-right: 0}
+#characters .images .top {margin-left: 100px}
+#characters .images .bottom {margin-left: 240px}
+
+#characters .images li img {transition: filter 0.5s;}
+#characters .images li img:hover {filter: brightness(20%)}
+#characters .images li .name {opacity: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);transition: opacity 0.5s;z-index: 999;font-size: 30px}
+#characters .images li:hover .name {opacity: 1}
+
+/* tablet*/
+@media all and (min-width:768px) and (max-width:1024px) {
+    #characters .characters_inner {padding: 4.479% 0 4.479% 12.706%;position: absolute;top: 0}
+   #characters .bg { height: 712px; background: url('../images/img/background_tablet.jpg') no-repeat center top;}
+    #characters .images {display: flex;flex-wrap:nowrap;}
+    #characters .images li { margin-right: 20px;margin-bottom: 20px;position: relative}
+#characters .images li:nth-child(4) {margin-right: 0}
+#characters .images .top {margin-left: 0px}
+#characters .images .bottom {margin-left: 0px}
+}
+
+/* mobile */
+@media all and (max-width:767px) {
+    #characters .bg { height: 960px; background: url('../images/img/background_mobile.jpg') no-repeat center top;}
+}
+
+/*stillcut*/
+#stillcut {height: 960px;padding: 4.479% 12.706%;position: relative;box-sizing: border-box}
+#stillcut h2 {margin-bottom: 70px}
+#stillcut .still { height: 960px; }
+#stillcut img {float: left}
+#stillcut .text {float: right;margin-top: 146px}
+#stillcut .text h1 {color: #fff;display: block; font-size: 60px;margin-bottom: 52px}
+#stillcut .text h1 span {color: #91222c; font-size: 60px;letter-spacing: 2px}
+#stillcut .text p {font-size: 23px;line-height: 1.5}
+
+/* pager */
+#stillcut .still .bx-pager { position:absolute; bottom:280px; left:15%; transform: translateX(-50%); }
+#stillcut .still .bx-pager-item { float:left; }
+#stillcut .still .bx-pager a { background:#ffffff; text-indent:-9999px; display:block; width:30px; height:2px; transition:all 0.2s; }
+#stillcut .still .bx-pager a.active { background:#91222c;height: 2.4px }
+/* direction */
+#stillcut .still .bx-controls-direction a { position: absolute; top: 50%; margin-top: -10px; width: 20px; height: 20px; border-top: 2px solid #fff; border-left: 2px solid #fff; text-indent: -9999px; }
+#stillcut .still .bx-prev { left: 10%; transform: rotate(-45deg); }
+#stillcut .still .bx-next { right: 10%; transform: rotate(135deg); }
+
+#makingfilm {height: 960px;}
+#makingfilm .makingfilm_inner {padding: 4.479% 12.706%;position: relative;box-sizing: border-box}
+#makingfilm h2 {margin-bottom: 120px}
+#makingfilm iframe {margin-right: 80px}
+#makingfilm iframe:nth-child(5) {margin-right: 0px}
+
+#makingfilm .footer {height: 232px;width: 100%;border-top: 1px solid #383838;box-sizing: border-box;}
+#makingfilm .footer .inner {padding: 1.875% 12.706%}
+#makingfilm .footer p {color: #fff;line-height: 1.5}
+
+
