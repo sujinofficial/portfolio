@@ -20,3 +20,11 @@
 #singsung .inner {text-align: center}
 #singsung .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #000;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
 #singsung .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #000;transform: rotate(90deg);position: absolute;left: 0;top: 0}
+
+
+/*throw*/
+
+#throw .inner {text-align: center}
+#throw .inner img {width: 20%}
+#throw .close {display: inline-block;font-size: 0;width: 60px;height: 2px;background: #000;transform: rotate(-45deg);position: absolute;top:80px;right: 60px;position: fixed}
+#throw .close:after {content: ""; display: inline-block;width: 60px;height: 2px;background: #000;transform: rotate(90deg);position: absolute;left: 0;top: 0}
