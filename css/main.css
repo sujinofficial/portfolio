@@ -279,7 +279,10 @@ padding: 0 16.1458%} /*padding:0px 310px*/
 #work ul li img:hover {transform: scale(1.2);filter: opacity(70%)}
 #work p {margin-top: 12px;}
 
-#epilogue {}
+#epilogue {padding:0 16.1458% ;position: relative} /*padding:155px 310px 87px*/
+#epilogue ul {display:flex}
+#epilogue ul li:nth-child(1) {margin-bottom: 36px}
+#epilogue ul li:nth-child(2) {margin-right: 24px;}
 
 
 
